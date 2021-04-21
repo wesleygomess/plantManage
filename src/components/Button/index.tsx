@@ -8,7 +8,7 @@ interface ButtonProps {
 
 function Button({title}: ButtonProps) {
   return(
-    <TouchableOpacity style={styles.button}>
+    <TouchableOpacity activeOpacity={0.7} style={styles.button}>
       <Text style={styles.contentButton}>{title}</Text>
     </TouchableOpacity>
   )

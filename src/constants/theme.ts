@@ -46,21 +46,8 @@ export const SIZES = {
     height
 };
 
-export const FONTS = {
-    navTitle: { fontFamily: "CarmenSans-Thin", fontSize: SIZES.navTitle },
-    largeTitleBold: { fontFamily: "CarmenSans-SemiBold", fontSize: SIZES.h2 },
-    h1: { fontFamily: "CarmenSans-SemiBold", fontSize: SIZES.h1, lineHeight: 36 },
-    h2: { fontFamily: "CarmenSans-SemiBold", fontSize: SIZES.h2, lineHeight: 30 },
-    h3: { fontFamily: "CarmenSans-SemiBold", fontSize: SIZES.h3, lineHeight: 22 },
-    h4: { fontFamily: "CarmenSans-SemiBold", fontSize: SIZES.h4, lineHeight: 22 },
-    h5: { fontFamily: "CarmenSans-SemiBold", fontSize: SIZES.h5, lineHeight: 22 },
-    body1: { fontFamily: "CarmenSans-Regular", fontSize: SIZES.body1, lineHeight: 36 },
-    body2: { fontFamily: "CarmenSans-Regular", fontSize: SIZES.body2, lineHeight: 30 },
-    body3: { fontFamily: "CarmenSans-Regular", fontSize: SIZES.body3, lineHeight: 22 },
-    body4: { fontFamily: "CarmenSans-Regular", fontSize: SIZES.body4, lineHeight: 22 },
-    body5: { fontFamily: "CarmenSans-Regular", fontSize: SIZES.body5, lineHeight: 22 },
-};
 
-const appTheme = { COLORS, SIZES, FONTS };
+
+const appTheme = { COLORS, SIZES};
 
 export default appTheme;
