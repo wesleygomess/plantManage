@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 28,
-    fontWeight: 'bold',
+    lineHeight: 34,
     color: COLORS.heading,
     textAlign: 'center',
     marginTop: 10,

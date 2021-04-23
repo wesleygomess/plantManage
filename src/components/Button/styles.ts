@@ -4,14 +4,14 @@ import {COLORS} from '../../constants'
 const styles = StyleSheet.create({
   button: {
     height: 56, 
-    width: 56, 
+    borderRadius: 16,
     backgroundColor: COLORS.green,
-    borderRadius: 16
+    justifyContent: 'center',
+    alignItems: 'center'
   },
-  contentButton: {
-    fontSize: 40, 
-    color: '#fff', 
-    textAlign: 'center' 
+  textButton: {
+    fontSize: 16, 
+    color: COLORS.white,
   }
 })
 

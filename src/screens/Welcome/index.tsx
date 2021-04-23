@@ -5,7 +5,12 @@ import styles from './styles'
 import {Entypo} from '@expo/vector-icons'
 import {images} from '../../constants';
 
-function WelcomeScreen() {
+function WelcomeScreen({navigation}) {
+
+  function handleStart(){
+    navigation.navigate('UserIndentification')
+  }
+ 
   return(
     <SafeAreaView style={styles.container}>
       <View style={styles.wrapper}>
@@ -24,7 +29,11 @@ function WelcomeScreen() {
           Nós cuidamos de lembrar você{'\n'}
           sempre que precisar.
         </Text>
-        <TouchableOpacity activeOpacity={0.7} style={styles.button}>
+        <TouchableOpacity 
+          onPress={handleStart}
+          activeOpacity={0.7} 
+          style={styles.button}
+        >
         <Text style={styles.buttonText}>
           <Entypo name='chevron-thin-right' size={20}/>
         </Text>
