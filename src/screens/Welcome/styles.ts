@@ -15,11 +15,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20
   },
   title: {
-    fontSize: 28,
+    fontSize: 26,
     lineHeight: 34,
     color: COLORS.heading,
     textAlign: 'center',
-    marginTop: 10,
+    marginTop: 20,
     fontFamily: fonts.heading
   },
   image: {

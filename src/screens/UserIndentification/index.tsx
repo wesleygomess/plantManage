@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
-import {View, Text, SafeAreaView, TextInput, KeyboardAvoidingView, Platform, ScrollView} from 'react-native';
+import {Alert, View, Text, SafeAreaView, TextInput, KeyboardAvoidingView, Platform, ScrollView} from 'react-native';
 import styles from './styles'
 
 import Button from '../../components/Button'
 import { COLORS } from '../../constants';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function UserIndentification({navigation}) {
   const [name, setName] = useState<String>('');
@@ -24,8 +25,23 @@ function UserIndentification({navigation}) {
     setName(value);
   }
 
-  function handleStart(){
-    navigation.navigate('Confirmation')
+  async function handleStart(){
+    if(!name)
+     return Alert.alert('Ops!','Digite um nome para continuarmos.');
+     
+     try{
+      await AsyncStorage.setItem('@app-plantManager:user', String(name));
+      navigation.navigate('Confirmation', {
+        title: 'Protinho',
+        subtitle: 'Agora vamos começar a cuidar das suas plantinhas com muito cuidado.',
+        buttonTitle: 'Começa',
+        icon: 'smile',
+        nextScreen: 'Home'
+      }); 
+     }catch{
+        Alert.alert('Ops!','Não foi possivel salver o seu nome.');
+     }
+  
   }
 
   return(

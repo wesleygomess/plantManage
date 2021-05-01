@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native' 
+import {StyleSheet, StatusBar, Platform} from 'react-native' 
 import fonts from '../../assets/fonts';
 import { COLORS } from '../../constants';
 
@@ -7,6 +7,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginTop: Platform.OS === 'ios' ? StatusBar.currentHeight + 20 : 5,
+    width: '100%'
   },
   title: {
     fontSize: 32,
