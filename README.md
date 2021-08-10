@@ -18,5 +18,5 @@ git clone https://github.com/wesleygomess/plantManage.git
 3. Caso ainda não tenha o expo client instalado na maquina rode o comando: npm install --global expo-cli 
 4. Por fim, rode o projeto com o seguinte comando: expo start 
 (Uma aba do browser será aberta com um QRcode, baixe o expo na loja de apps do seu celular e leia o Qrcode, Pronto! o projeto vai buildar no seu celular.)
-caso esteja usando um emulador e só clicar na opção (Run on Android divece/emulador) ou (Run os ios simulator) obs: no Android o emulador precisa estar aberto. 
+caso esteja usando um emulador é só clicar na opção (Run on Android divece/emulador) ou (Run os ios simulator) obs: no Android o emulador precisa estar aberto. 
 
